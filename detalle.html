@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Quiero Cocinar :: Hamburguesa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/estilos.css" />
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+       <nav class="menu">
+           <div class="logo"><img src="img/logo.png" alt="Logo" /></div>
+            <ul class="active">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <a class="toggle-nav" href="#">&#9776;</a>
+        </nav>
+        
+        <header class="headDetalle">
+            <h1>Título del plato</h1>
+            <a href="#">Tag 1</a> <a href="#">Tag 2</a> <a href="#">Tag 3</a>
+            <a href="#">"Dificultad"</a>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <section>
+                        <h2>Descripción</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quibusdam, unde suscipit fuga eius natus rem cumque ab, doloremque fugiat vero aliquid nobis nisi eligendi consequatur. Deleniti, dolor! Nisi, praesentium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae, sed nihil expedita officia, iste eum voluptate distinctio consequuntur necessitatibus quod qui, harum velit. Nihil doloremque repellendus amet, modi ad?</p>
+                        <img src="img/img5-big.jpg" alt="Hamburguesa">
+                        <h2>Ingredientes</h2>
+                        <ul>
+                            <li>Ingrediente 1</li>
+                            <li>Ingrediente 2</li>
+                            <li>Ingrediente 3</li>
+                            <li>Ingrediente 4</li>
+                            <li>Ingrediente 5</li>
+                        </ul>
+                        <h2>Preparación</h2>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet quisquam, ipsa omnis officiis voluptates quae corporis obcaecati voluptatum labore totam ut quis fuga quod quibusdam quam blanditiis.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quos, distinctio reiciendis beatae, excepturi sit culpa nisi rem.!</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi expedita sunt possimus voluptas.</li>
+                        </ol>
+                    </section>
+                </div>
+                <div class="col-3">
+                    <aside>
+                        <h3>Otros platos similares</h3>
+                        <div>
+                            <img src="img/img1.jpg" alt="Polenta con salsa de tomate y albondigas" height="250" />
+                            <h3>Título de la receta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia fugiat non. Neque, deserunt, in ratione sunt eos doloribus porro eius accusantium unde omnis quidem?</p>
+                            <a href="#">Quiero prepararla!</a>
+                        </div>
+                        <div>
+                            <img src="img/img2.jpg" alt="Tallarines al pesto con langostinos" height="250" />
+                            <h3>Título de la receta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia fugiat non. Neque, deserunt, in ratione sunt eos doloribus porro eius accusantium unde omnis quidem?</p>
+                            <a href="#">Quiero prepararla!</a>
+                        </div>
+                        <div>
+                            <img src="img/img3.jpg" alt="Sopa de calabaza con salsa blanca" height="250" />
+                            <h3>Título de la receta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia fugiat non. Neque, deserunt, in ratione sunt eos doloribus porro eius accusantium unde omnis quidem?</p>
+                            <a href="#">Quiero prepararla!</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer>
+          <div class="container">
+               <div class="row">
+                   <div class="col-6 social">
+                        <h4>Encontranos en:</h4>
+                        <ul>
+                            <li><a href="#"><span class="icon-facebook2"></span></a></li>
+                            <li><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 copy">
+                        <small>Copyright 2016 por Damián Bertazza. Todos los derechos reservados.</small>
+                        <ul>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery Toggle-Nav Responsive -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.toggle-nav').click(function(e) {
+                    $(this).toggleClass('active');
+                    $('.menu ul').toggleClass('active');
+
+                    e.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>

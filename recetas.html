@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Quiero Cocinar :: Recetas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/estilos.css" /> 
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="menu">
+           <div class="logo"><img src="img/logo.png" alt="Logo" /></div>
+            <ul class="active">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="current-item"><a href="recetas.html">Recetas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <a class="toggle-nav" href="#">&#9776;</a>
+        </nav>
+        <header id="headRecetas">
+            <div class="info-headRecetas">
+                <h1>Explorar nuestras recetas</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, accusamus. Nihil quisquam, iusto vitae consequatur facilis distinctio repellat in vel numquam atque dolores illo earum laborum, praesentium dolorem, magnam sunt?</p>
+            </div>
+        </header>
+        <div class="busquedaRec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <aside id="filtros">
+                            <div>
+                                <h3>Sabor</h3>
+                                <ul>
+                                    <li><a href="#">Dulce</a></li>
+                                    <li><a href="#">Salado</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Tipo de cocción</h3>
+                                <ul>
+                                    <li><a href="#">Cacerola</a></li>
+                                    <li><a href="#">Horno</a></li>
+                                    <li><a href="#">Sartén</a></li>
+                                    <li><a href="#">Sin fuego</a></li>
+                                </ul>
+                            </div>
+                            <!-- La dificultad va a estar medida por íconos en el futuro -->
+                            <div>
+                                <h3>Dificultad</h3>
+                                <ul>
+                                    <li><a href="#">Fácil</a></li>
+                                    <li><a href="#">Mediano</a></li>
+                                    <li><a href="#">Difícil</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-9">
+                        <section class="recetasResultados">
+                            <div class="row">
+                               <div class="col-4">
+                                   <a href="detalle.html"><img src="img/img5.jpg" alt="Fideos con cosas raras" /></a>
+                               </div>
+                               <div class="col-8">
+                                <h2><a href="detalle.html">Título del plato</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, praesentium nobis minima omnis dignissimos quisquam necessitatibus, commodi debitis sint.</p>
+                                <a href="#">Tag 1</a> <a href="#">Tag 2</a> <a href="#">Tag 3</a>
+                               </div>
+                            </div>
+                            <div class="row">
+                               <div class="col-4">
+                                   <a href="detalle.html"><img src="img/img4.jpg" alt="Fideos con cosas raras" /></a>
+                               </div>
+                               <div class="col-8">
+                                <h2><a href="detalle.html">Título del plato</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, praesentium nobis minima omnis dignissimos quisquam necessitatibus, commodi debitis sint.</p>
+                                <a href="#">Tag 1</a> <a href="#">Tag 2</a> <a href="#">Tag 3</a>
+                               </div>
+                            </div>
+                            <div class="row">
+                               <div class="col-4">
+                                   <a href="detalle.html"><img src="img/img6.jpg" alt="Fideos con cosas raras" /></a>
+                               </div>
+                               <div class="col-8">
+                                <h2><a href="detalle.html">Título del plato</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, praesentium nobis minima omnis dignissimos quisquam necessitatibus, commodi debitis sint.</p>
+                                <a href="#">Tag 1</a> <a href="#">Tag 2</a> <a href="#">Tag 3</a>
+                               </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+          <div class="container">
+               <div class="row">
+                   <div class="col-6 social">
+                        <h4>Encontranos en:</h4>
+                        <ul>
+                            <li><a href="#"><span class="icon-facebook2"></span></a></li>
+                            <li><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 copy">
+                        <small>Copyright 2016 por Damián Bertazza. Todos los derechos reservados.</small>
+                        <ul>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery Toggle-Nav Responsive -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.toggle-nav').click(function(e) {
+                    $(this).toggleClass('active');
+                    $('.menu ul').toggleClass('active');
+
+                    e.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>
