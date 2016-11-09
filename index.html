@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Bona Dona</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
+        <meta content="width=device-width,initial-scale=1" name="viewport">
         
         <link rel="stylesheet" href="css/estilos.css" />
 
@@ -38,11 +39,14 @@
        <section id="buscador">
            <div class="container">
               <h1>¿Con qué vas a cocinar hoy?</h1>
+              <p>Encontrá las recetas de deliciosos platos, en base a los ingredientes que tengas en tu casa.<br/> ¿No se te ocurre qué preparar? Nosotros te ayudamos!</p>
                <form action="#" method="GET">
-                   <input type="search" placeholder="Ingresa al menos 3 ingredientes" required name="ingredientes" />
-                   <!-- <input type="radio" name="sabor" id="dulce" value="dulce" /> <label for="dulce">Dulce</label>
-                   <input type="radio" name="sabor" id="salado" value="salado" checked/> <label for="salado">Salado</label> -->
-                   <input type="submit" value="Buscar!" />
+                   <div class="formCont">
+                       <input type="search" placeholder="Ingresa al menos 3 ingredientes" required name="ingredientes" />
+                       <!-- <input type="radio" name="sabor" id="dulce" value="dulce" /> <label for="dulce">Dulce</label>
+                       <input type="radio" name="sabor" id="salado" value="salado" checked/> <label for="salado">Salado</label> -->
+                       <input type="submit" value="Buscar!" />
+                   </div>
                </form>
            </div>
        </section>
@@ -51,7 +55,7 @@
            <div class="container">
                 <h2>Recetas más populares</h2>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-3">
                        <img src="img/img1.jpg" alt="Polenta con salsa de tomate y albondigas" />
                        <div class="recoItem">
                             <h3>Título de la receta</h3>
@@ -59,7 +63,7 @@
                             <a href="#">Quiero prepararla!</a>
                        </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <img src="img/img2.jpg" alt="Tallarines al pesto con langostinos" />
                         <div class="recoItem">
                             <h3>Título de la receta</h3>
@@ -67,7 +71,15 @@
                             <a href="#">Quiero prepararla!</a>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
+                        <img src="img/img3.jpg" alt="Sopa de calabaza con salsa blanca" />
+                        <div class="recoItem">
+                            <h3>Título de la receta</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia fugiat non. Neque, deserunt, in ratione sunt eos doloribus porro eius accusantium unde omnis quidem?</p>
+                            <a href="#">Quiero prepararla!</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
                         <img src="img/img3.jpg" alt="Sopa de calabaza con salsa blanca" />
                         <div class="recoItem">
                             <h3>Título de la receta</h3>
@@ -85,7 +97,7 @@
                    <div class="col-6 social">
                         <h4>Encontranos en:</h4>
                         <ul>
-                            <li><a href="#"><span class="icon-facebook2"></span></a></li>
+                            <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                         </ul>

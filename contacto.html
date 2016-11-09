@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Quiero Cocinar :: Contacto</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
+        <meta content="width=device-width,initial-scale=1" name="viewport">
         
         <link rel="stylesheet" href="css/estilos.css" />
 
@@ -28,15 +29,15 @@
             <div class="infoContacto">
                 <h1>Dejanos tu mensaje</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita omnis enim modi mollitia laboriosam unde, eum deserunt dolore similique tenetur doloremque cupiditate, quis ullam inventore eveniet nam veritatis aut!</p>
-                <small>Todos los campos son obligatorios!</small>
             </div>
         </header>
         <section id="contactoBG">
             <form action="#" method="POST" id="formContacto">
-                <input type="text" placeholder="Nombre" name="nombre" required /><br/>
-                <input type="text" placeholder="Apellido" name="apellido" required /><br/>
-                <input type="email" placeholder="Email" name="email" required /><br/>
-                <textarea name="mensaje" cols="30" rows="10" placeholder="Ingresá tu mensaje" required></textarea><br/>
+                <small>Los campos que posean (*) son obligatorios.</small>
+                <input type="text" placeholder="Nombre (*)" name="nombre" required /><br/>
+                <input type="text" placeholder="Apellido" name="apellido" /><br/>
+                <input type="email" placeholder="Email (*)" name="email" required /><br/>
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Ingresá tu mensaje (*)" required></textarea><br/>
                 <input type="submit" value="Enviar" />
             </form>
         </section>
@@ -46,7 +47,7 @@
                    <div class="col-6 social">
                         <h4>Encontranos en:</h4>
                         <ul>
-                            <li><a href="#"><span class="icon-facebook2"></span></a></li>
+                            <li><a href="#"><span class="icon-facebook"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                         </ul>
